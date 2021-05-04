@@ -10,6 +10,7 @@ import java.io.Reader;
 import java.util.*;
 
 
+
 /**
  * Created by LaunchCode
  */
@@ -75,7 +76,7 @@ public class JobData {
 
             String aValue = row.get(column);
 
-            if (aValue.contains(value)) {
+            if (aValue.toLowerCase(Locale.ROOT).contains(value.toLowerCase(Locale.ROOT))) {
                 jobs.add(row);
             }
         }
